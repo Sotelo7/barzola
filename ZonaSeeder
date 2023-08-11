@@ -1,0 +1,24 @@
+
+   INFO  Seeding database.  
+
+
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [Database\Seeders\] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:914
+    910▕ 
+    911▕         try {
+    912▕             $reflector = new ReflectionClass($concrete);
+    913▕         } catch (ReflectionException $e) {
+  ➜ 914▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    915▕         }
+    916▕ 
+    917▕         // If the type is not instantiable, the developer is attempting to resolve
+    918▕         // an abstract type such as an Interface or Abstract Class and there is
+
+      [2m+22 vendor frames [22m
+
+  23  artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
